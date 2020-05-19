@@ -8,21 +8,10 @@ interface LoginPage {
     password?: string,
 }
 
-interface Decoded {
-    exp: number
-}
-
 interface PropsInt {
-    user: Decoded | null,
+    user: {exp: number} | null,
     updateToken: (newToken: string) => void
 }
-
-interface StateInterface {
-    email?: string,
-    message?: string,
-    password?: string
-}
-
 
 const Login: React.FC<PropsInt> = props => {
   // Declare and initialize state variables

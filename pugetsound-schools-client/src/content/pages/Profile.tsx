@@ -1,10 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {Redirect} from 'react-router-dom'
 
-interface Decoded {
-    exp: number
-}
-
 interface PropsInt {
     user: {
         firstName: string,

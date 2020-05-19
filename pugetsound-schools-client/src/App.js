@@ -50,8 +50,6 @@ const App = props => {
         <Header />
         <main>
           <Content user={user} updateToken={updateToken}/>
-           {/*      <TestFCalendar /> */}
-          <Calendar />
         </main>
         <Footer />
       </div>

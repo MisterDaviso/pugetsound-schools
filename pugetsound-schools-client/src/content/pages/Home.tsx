@@ -1,9 +1,12 @@
 import React from 'react'
+import 'antd/dist/antd.css';
+import {Button} from 'antd';
 
-const Home : React.FC<{  }> = () =>{
+
+const Home : React.FC<{}> = () =>{
   return (
     <div>
-      <h2>HOME  STUB TSX </h2>
+      <Button type="dashed"> WELCOME!</Button>
     </div>
   )
 }

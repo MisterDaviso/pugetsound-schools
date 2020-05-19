@@ -3,10 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-    "@types/react": "^16.9.35",
-    "@types/react-dom": "^16.9.8",
-=======
     "@fullcalendar/core": "^4.4.0",
     "@fullcalendar/daygrid": "^4.4.0",
     "@fullcalendar/interaction": "^4.4.0",
@@ -16,7 +12,7 @@
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
     "@types/react-router-dom": "^5.1.5",
->>>>>>> 8af3b330605db81b125a9bf1eaa232dd8a88a647
+    "antd": "^4.2.4",
     "jwt-decode": "^2.2.0",
     "moment": "^2.25.3",
     "react": "^16.9.0",
