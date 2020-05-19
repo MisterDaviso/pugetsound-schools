@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Header = props => {
+const Header : React.FC<{  }> = () =>{
   return (
     <header className="App-header">
-      <h1>Hello World!</h1>
+      <h1>Hello World TSX!</h1>
     </header>
   )
 }

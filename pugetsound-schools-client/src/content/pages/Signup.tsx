@@ -1,8 +1,16 @@
 // Packages
-import React, { useState } from 'react'
+import React, { useState, FormEvent } from 'react'
 import {Redirect} from 'react-router-dom'
 
-const Signup = props => {
+interface PropsInt {
+    user: {
+        firstName: string,
+        pic: string,
+    }
+    updateToken: (newToken: string | null) => void
+}
+
+const Signup: React.FC<PropsInt> = props => {
   // Declare and initialize state variables
   let [email, setEmail] = useState('')
   let [firstName, setFirstname] = useState('')
@@ -11,7 +19,7 @@ const Signup = props => {
   let [password, setPassword] = useState('')
   let [profileUrl, setProfileUrl] = useState('')
 
-  const handleSubmit = e => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
     // TODO: Send the user sign up data to the server
 

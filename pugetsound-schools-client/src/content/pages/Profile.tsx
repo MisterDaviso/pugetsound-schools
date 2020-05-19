@@ -1,7 +1,18 @@
 import React, {useEffect, useState} from 'react'
 import {Redirect} from 'react-router-dom'
 
-const Profile = props => {
+interface Decoded {
+    exp: number
+}
+
+interface PropsInt {
+    user: {
+        firstName: string,
+        pic: string,
+    }
+}
+
+const Profile: React.FC<PropsInt> = (props) => {
   let [secretMessage, setSecretMessage] = useState('')
   
   useEffect(() => {

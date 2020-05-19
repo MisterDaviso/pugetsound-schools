@@ -1,9 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Nav = props => {
-  const handleLogout = e => {
-    e.preventDefault()
+interface IUser_UpdateToken { 
+    user: Object | null, 
+    updateToken: (newToken: string)=>void 
+ } 
+
+ 
+
+const Nav: React.FC< IUser_UpdateToken > = props => {
+  const handleLogout = (event: React.FormEvent) => {
+    event.preventDefault()
     // TODO: Remove the token from localstorage (or cookies)
     // TODO: Update the state of the App
     props.updateToken('')

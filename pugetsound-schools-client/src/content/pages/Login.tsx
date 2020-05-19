@@ -1,15 +1,37 @@
 // Packages
-import React, { useState } from 'react'
+import React, { useState, FormEvent } from 'react'
 import {Redirect} from 'react-router-dom'
 
-const Login = props => {
+interface LoginPage {
+    email?: string,
+    message?: string,
+    password?: string,
+}
+
+interface Decoded {
+    exp: number
+}
+
+interface PropsInt {
+    user: Decoded | null,
+    updateToken: (newToken: string) => void
+}
+
+interface StateInterface {
+    email?: string,
+    message?: string,
+    password?: string
+}
+
+
+const Login: React.FC<PropsInt> = props => {
   // Declare and initialize state variables
   let [email, setEmail] = useState('')
   let [message, setMessage] = useState('')
   let [password, setPassword] = useState('')
 
   // Event handlers
-  const handleSubmit = e => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
     console.log('submit', email, password)
 
