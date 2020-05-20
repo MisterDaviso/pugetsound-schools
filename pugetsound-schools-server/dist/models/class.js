@@ -19,9 +19,6 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-/**
- * Class Model
- */
 var mongoose = __importStar(require("mongoose"));
 var mongoose_1 = require("mongoose");
 var ClassSchema = new mongoose_1.Schema({
