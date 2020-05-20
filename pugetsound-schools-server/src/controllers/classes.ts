@@ -7,7 +7,7 @@ const router = Router()
 
 // POST a new class
 router.post('/', (req:Request, res:Response) => {
-    db.Class.create(req.body)
+     db.Class.create(req.body)
     .then((c:IClass) => {
         res.send(c)
     })
